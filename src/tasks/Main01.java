@@ -11,6 +11,7 @@ public class Main01 {
         getOutput(getData(correctedData));
     }
 
+    //избыточный метод, возвращающий массив
     private static String[] provideData() {
         return fruitsAndVegetables;
     }

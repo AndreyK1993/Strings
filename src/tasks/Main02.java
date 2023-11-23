@@ -1,5 +1,8 @@
 package tasks;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class Main02 {
 
     // Массив строк с набором слов
@@ -18,13 +21,22 @@ public class Main02 {
 
     // Метод для коррекции данных
     private static String[] correctData(String[] items) {
-        // удаление 'onion' в каждом элементе массива
-        for (int i = 0; i < items.length; i++) {
-            items[i] = items[i].replaceAll("onion", "");
+        List<String> correctedList = new ArrayList<>();
+
+        for (String item : items) {
+            // удаление 'onion' в каждом элементе массива
+            String correctedItem = item.replaceAll("onion", "").trim();
+
+            // Проверяем, не является ли строка пустой, перед добавлением
+            if (!correctedItem.isEmpty()) {
+                correctedList.add(correctedItem);
+            }
         }
 
-        return items;
+        // Преобразуем список обратно в массив
+        return correctedList.toArray(new String[0]);
     }
+
 
     // Метод для форматированного вывода данных
     private static String getData(String[] items) {

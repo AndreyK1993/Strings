@@ -4,6 +4,10 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Main03 {
+    // Головний метод для запуску програми
+    public static void main(String[] args) {
+        new Main03().getData();
+    }
 
     private static String[] names = {"Bob", "Alice", "Tom", "Lucy", "Bob", "Lisa"};
     private final Scanner scanner = new Scanner(System.in);
@@ -34,9 +38,5 @@ public class Main03 {
             System.out.println("Name not found in the list.");
         }
     }
-
-    // Головний метод для запуску програми
-    public static void main(String[] args) {
-        new Main03().getData();
-    }
 }
+

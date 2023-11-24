@@ -7,6 +7,9 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class Main04 {
+    public static void main(String[] args) {
+        new Main04().getData();
+    }
 
     private static String[] textArray = {
             "Lorem ipsum dolor sit amet,",
@@ -53,10 +56,5 @@ System.out.println("Unique words: " + uniqueWords);: Выводятся сами
 
         System.out.println("Number of unique words: " + uniqueWords.size());
         System.out.println("Unique words: " + uniqueWords);
-    }
-
-
-    public static void main(String[] args) {
-        new Main04().getData();
     }
 }

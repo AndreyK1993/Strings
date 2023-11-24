@@ -5,15 +5,15 @@ import java.util.ArrayList;
 
 public class Main02 {
 
-    // Массив строк с набором слов
-    private static String[] fruitsAndVegetables = {
-            "orange", "plum", "tomato", "onion", "grape", "onion"};
-
     public static void main(String[] args) {
         String[] correctedData = correctData(provideData());
         // Вызываем метод getOutput с результатом работы метода getData
         getOutput(getData(correctedData));
     }
+
+    // Массив строк с набором слов
+    private static String[] fruitsAndVegetables = {
+            "orange", "plum", "tomato", "onion", "grape", "onion"};
 
     private static String[] provideData() {
         return fruitsAndVegetables;
